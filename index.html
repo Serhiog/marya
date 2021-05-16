@@ -60,9 +60,7 @@
                             </a>
                         </li>
                         <li class="header__list-user-item header__list-user-item--search">
-                            <a class="header__list-user-item-link" href="#">
-                                <img class="header__list-user-img" src="img/searchHeader.svg" alt="search" width="20px"
-                                    height="20px" />
+                            <a class="header__list-user-item-link header__list-user-item-link--search" href="#">
                             </a>
                         </li>
                         <li class="header__list-user-item header__list-user-item--ring">
@@ -81,9 +79,14 @@
                 </div>
                 <!-- 3 ПОИСК -->
                 <div class="header__search">
-                    <div class="header__search-inner">
-                        <input class="header__search-input" type="text" placeholder="Кухонные шкафы">
-                        <button class="header__search-btn" href="#">Найти</button>
+
+                    <div class="header__search-block">
+                        <div class="header__search-inner">
+                            <div class="header__search-wrapper">
+                                <input class="header__search-input" type="text" placeholder="Кухонные шкафы">
+                                <button class="header__search-btn" href="#">Найти</button>
+                            </div>
+                        </div>
                         <div class="header__search-result">
                             <p class="header__search-popular">Популярные запросы</p>
                             <ul class="header__search-list">
@@ -126,7 +129,7 @@
                             </ul>
                             <p class="header__search-popular">Продукция</p>
                             <ul class="header__search-product-list">
-                                <li class="header__search-product-list-item">
+                                <li class="header__search-product-list-item header__search-product-list-item--intuit">
                                     <div class="header__search-product-list-item-wrapper">
                                         <img class="header__search-product-list-item-img" alt="Кухня Intuit"
                                             width="123px" height="91px" src="img/searchList1.png" />
@@ -139,12 +142,13 @@
                                             </li>
                                             <li class="header__search-product-list-item-infos-text">
                                                 Богемная
-                                                лаконичность и глянец модели Intuit достигаются отсутствием ручек
+                                                лаконичность и глянец модели Intuit достигаются отсутствием
+                                                ручек
                                             </li>
                                         </ul>
                                     </div>
                                 </li>
-                                <li class="header__search-product-list-item">
+                                <li class="header__search-product-list-item header__search-product-list-item--rimini">
                                     <div class="header__search-product-list-item-wrapper">
                                         <img class="header__search-product-list-item-img" alt="Кухня Rimini"
                                             width="123px" height="91px" src="img/searchList2.png" />
@@ -164,6 +168,10 @@
                             </ul>
                         </div>
                     </div>
+
+
+
+
                 </div>
                 <!-- 4 МЕНЮ БУРГЕРА -->
                 <div class="header__menu">

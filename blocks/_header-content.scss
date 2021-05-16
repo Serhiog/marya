@@ -136,7 +136,7 @@
     &__list-user-img {}
 
     &__list-user-item--search {
-        margin-left: 35px;
+        margin-left: 55px;
     }
 
     &__list-user-item--ring {
@@ -148,13 +148,22 @@
     }
 
     &__search {
-        display: none;
-        order  : 3;
+        display   : none;
+        order     : 3;
+        flex-basis: 100%;
+        margin-top: -1px;
     }
 
-    &__search-inner {}
+    &__search--hidden {
+        display: block;
+    }
 
     &__search-input {
+        background-color: #f1f1f1;
+        flex-grow       : 1;
+        margin-top      : 2px;
+        display         : inline-block;
+
         &::placeholder {
             color         : #000000;
             font-family   : Montserrat;
@@ -178,9 +187,17 @@
         font-style      : normal;
         letter-spacing  : normal;
         line-height     : 22.4px;
+        margin-top      : -6px;
     }
 
-    &__search-result {}
+    &__search-result {
+        background-color: #fff;
+        flex-basis      : 100%;
+        max-width       : 988px;
+        margin-left     : 124px;
+        padding-left    : 18px;
+        padding-top     : 25px;
+    }
 
     &__search-popular {
         opacity       : 0.5;
@@ -193,7 +210,11 @@
         line-height   : 14px;
     }
 
-    &__search-list {}
+    &__search-list {
+        margin-top   : 8px;
+        margin-bottom: 44px;
+
+    }
 
     &__search-item {
         color         : #000000;
@@ -217,9 +238,16 @@
 
     &__search-product-list-item {}
 
-    &__search-product-list-item-wrapper {}
+    &__search-product-list-item-wrapper {
+        @include flex;
+        justify-content: flex-start;
+        align-items    : flex-start;
 
-    &__search-product-list-item-img {}
+    }
+
+    &__search-product-list-item-img {
+        margin-right: 19px
+    }
 
     &__search-product-list-item-infos {
         color         : #000000;
@@ -229,11 +257,15 @@
         font-style    : normal;
         letter-spacing: normal;
         line-height   : 23.8px;
+        margin-top    : -2px;
+
     }
 
     &__search-product-list-item-infos-name {}
 
-    &__search-product-list-item-infos-price {}
+    &__search-product-list-item-infos-price {
+        margin-bottom: 8px;
+    }
 
     &__search-product-list-item-infos-text {
         color         : #000000;
@@ -535,5 +567,77 @@
         letter-spacing: normal;
         line-height   : 14px;
         text-align    : center;
+    }
+
+    &__list-user-item-link--search {
+        position: relative;
+
+
+        &::before {
+            content          : "";
+            position         : absolute;
+            width            : 20px;
+            height           : 20px;
+            background-image : url("img/searchHeader.svg");
+            top              : -10px;
+            left             : -20px;
+            background-repeat: no-repeat;
+        }
+
+
+    }
+
+    &__list-user-item-link--search--active {
+        position: relative;
+
+
+        &::before {
+            content          : "";
+            position         : absolute;
+            width            : 46px;
+            height           : 46px;
+            background-image : url("img/active-search.svg");
+            top              : -23px;
+            left             : -34px;
+            background-repeat: no-repeat;
+        }
+    }
+
+    &__search-block {
+        @include flex;
+        flex-wrap: wrap;
+    }
+
+    &__search-common {
+        background-color: #f1f1f1;
+        flex-basis      : 100%;
+        @include flex
+    }
+
+
+    &__search-inner {
+        flex-basis      : 100%;
+        background-color: #f1f1f1;
+    }
+
+    &__search-wrapper {
+        max-width: 970px;
+        @include flex;
+        margin-left   : 131px;
+        padding-top   : 24px;
+        padding-bottom: 18px;
+
+    }
+
+    &__search-product-list-item--intuit {
+        margin-top   : 21px;
+        margin-bottom: 26px;
+
+    }
+
+    &__search-product-list-item--rimini {}
+
+    &__list--active {
+        margin-bottom: 0;
     }
 }
