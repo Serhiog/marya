@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TEST</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<body>
+
+    <header class="header">
+        <div class="header__inner">
+            <div class="header__top">
+                <div class="header__top-wrapper">
+                    <p class="header__top-text header__top-text-ask">Задать вопрос</p>
+                    <p class="header__top-text header__top-text-check">Проверить состояние заказа</p>
+                </div>
+            </div>
+            <div class="header__content">
+                <!-- 0 БУРГЕР -->
+                <div class="header__burger">
+                    <a class="header__burger-link" href="#">
+                        <img class="header__burger-img" alt="burger" src="img/burgerBtn.svg" width="23px"
+                            height="16px"></img>
+                    </a>
+                </div>
+                <!-- 1 ТЕЛЕФОН -->
+                <div class="header__tel">
+                    <a href="tel:88001003131" class="header__tel-number">8 800 100 31 31</a> <span
+                        class="header__tel-text"> – по РФ бесплатно</span>
+                </div>
+                <!-- 2 СПИСОК -->
+                <div class="header__list">
+                    <ul class="header__list-services">
+                        <li class="header__list-services-item">
+                            <a class="header__list-services-item-link" href="#">Наши салоны</a>
+                        </li>
+                        <li class="header__list-services-item header__list-services-item--arrow">
+                            <a class="header__list-services-item-link" href="#">Онлайн сервисы</a>
+                        </li>
+                        <li class="header__list-services-item header__list-services-item--arrow">
+                            <a class="header__list-services-item-link" href="#">Услуги</a>
+                        </li>
+                        <li class="header__list-services-item header__list-services-item--arrow">
+                            <a class="header__list-services-item-link" href="#">Акции</a>
+                        </li>
+                        <li class="header__list-services-item">
+                            <a class="header__list-services-item-link" href="#">Сотрудничество</a>
+                        </li>
+                    </ul>
+                    <ul class="header__list-user">
+                        <li class="header__list-user-item header__list-user-item--location">
+                            <a class="header__list-user-item-link" href="#">
+                                <img class="header__list-user-img" src="img/locationHeader.svg" alt="location"
+                                    width="17px" height="21px" />
+                                Москва
+                            </a>
+                        </li>
+                        <li class="header__list-user-item header__list-user-item--search">
+                            <a class="header__list-user-item-link" href="#">
+                                <img class="header__list-user-img" src="img/searchHeader.svg" alt="search" width="20px"
+                                    height="20px" />
+                            </a>
+                        </li>
+                        <li class="header__list-user-item header__list-user-item--ring">
+                            <a class="header__list-user-item-link" href="#">
+                                <img class="header__list-user-img" src="img/ringHeader.svg" alt="ring" width="18px"
+                                    height="20px" />
+                            </a>
+                        </li>
+                        <li class="header__list-user-item header__list-user-item--login">
+                            <a class="header__list-user-item-link" href="#">
+                                <img class="header__list-user-img" src="img/loginHeader.svg" alt="login" width="18px"
+                                    height="20px" />
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- 3 ПОИСК -->
+                <div class="header__search">
+                    <div class="header__search-inner">
+                        <input class="header__search-input" type="text" placeholder="Кухонные шкафы">
+                        <button class="header__search-btn" href="#">Найти</button>
+                        <div class="header__search-result">
+                            <p class="header__search-popular">Популярные запросы</p>
+                            <ul class="header__search-list">
+                                <li class="header__search-item">
+                                    <span class="header__search-item-bold">
+                                        Кухонные шкафы
+                                    </span>
+                                    Мария
+                                </li>
+                                <li class="header__search-item">
+                                    <span class="header__search-item-bold">
+                                        Кохонные шкафы
+                                    </span>
+                                    серии Микс
+                                </li>
+                                <li class="header__search-item">
+                                    Белые
+                                    <span class="header__search-item-bold">
+                                        кухонные шкафы
+                                    </span>
+                                </li>
+                                <li class="header__search-item">
+                                    Большие
+                                    <span class="header__search-item-bold">
+                                        кухонные шкафы
+                                    </span>
+                                </li>
+                                <li class="header__search-item">
+                                    Серия компактный
+                                    <span class="header__search-item-bold">
+                                        кухонных шкафов
+                                    </span>
+                                </li>
+                                <li class="header__search-item">
+                                    <span class="header__search-item-bold">
+                                        Кухонные шкафы
+                                    </span>
+                                    для студий
+                                </li>
+                            </ul>
+                            <p class="header__search-popular">Продукция</p>
+                            <ul class="header__search-product-list">
+                                <li class="header__search-product-list-item">
+                                    <div class="header__search-product-list-item-wrapper">
+                                        <img class="header__search-product-list-item-img" alt="Кухня Intuit"
+                                            width="123px" height="91px" src="img/searchList1.png" />
+                                        <ul class="header__search-product-list-item-infos">
+                                            <li class="header__search-product-list-item-infos-name">
+                                                Кухня Intuit
+                                            </li>
+                                            <li class="header__search-product-list-item-infos-price">
+                                                цена от 175 806₽
+                                            </li>
+                                            <li class="header__search-product-list-item-infos-text">
+                                                Богемная
+                                                лаконичность и глянец модели Intuit достигаются отсутствием ручек
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="header__search-product-list-item">
+                                    <div class="header__search-product-list-item-wrapper">
+                                        <img class="header__search-product-list-item-img" alt="Кухня Rimini"
+                                            width="123px" height="91px" src="img/searchList2.png" />
+                                        <ul class="header__search-product-list-item-infos">
+                                            <li class="header__search-product-list-item-infos-name">
+                                                Кухня Rimini
+                                            </li>
+                                            <li class="header__search-product-list-item-infos-price">
+                                                цена от 204 982₽
+                                            </li>
+                                            <li class="header__search-product-list-item-infos-text">
+                                                Описание кухни
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- 4 МЕНЮ БУРГЕРА -->
+                <div class="header__menu">
+                    <div class="header__menu-wrapper">
+                        <ul class="header__menu-top-list">
+                            <li class="header__menu-list-item">
+                                <a class="header__menu-list-item-link">О компании</a>
+                            </li>
+                            <li class="header__menu-list-item">
+                                <a class="header__menu-list-item-link">Услуги</a>
+                            </li>
+                            <li class="header__menu-list-item">
+                                <a class="header__menu-list-item-link">Продукция</a>
+                            </li>
+                        </ul>
+                        <div class="header__menu-lists">
+                            <ul class="header__menu-list">
+                                <li class="header__menu-list-item header__menu-list-item--title">
+                                    <a class="header__menu-list-item-link">
+                                        Кухни
+                                    </a>
+                                </li>
+                                <li class="header__menu-list-item">
+                                    <a class="header__menu-list-item-link">
+                                        Современные
+                                    </a>
+                                </li>
+                                <li class="header__menu-list-item">
+                                    <a class="header__menu-list-item-link">
+                                        Классические
+                                    </a>
+                                </li>
+                                <li class="header__menu-list-item">
+                                    <a class="header__menu-list-item-link">
+                                        Неоклассика
+                                    </a>
+                                </li>
+                                <li class="header__menu-list-item">
+                                    <a class="header__menu-list-item-link">
+                                        KarMa by Karim Rashid
+                                    </a>
+                                </li>
+                                <li class="header__menu-list-item">
+                                    <a class="header__menu-list-item-link">
+                                        Прованс
+                                    </a>
+                                </li>
+                                <li class="header__menu-list-item">
+                                    <a class="header__menu-list-item-link">
+                                        Лофт
+                                    </a>
+                                </li>
+                                <li class="header__menu-list-item">
+                                    <a class="header__menu-list-item-link">
+                                        Скандинавский стиль
+                                    </a>
+                                </li>
+                                <li class="header__menu-list-item">
+                                    <a class="header__menu-list-item-link">
+                                        Хай-тек
+                                    </a>
+                                </li>
+                            </ul>
+                            <ul class="header__menu-list">
+                                <li class="header__menu-list-item header__menu-list-item--title">
+                                    <a class="header__menu-list-item-link">
+                                        Шкафы
+                                    </a>
+                                </li>
+                                <li class="header__menu-list-item">
+                                    <a class="header__menu-list-item-link">
+                                        Купе
+                                    </a>
+                                </li>
+                                <li class="header__menu-list-item">
+                                    <a class="header__menu-list-item-link">
+                                        Распашные
+                                    </a>
+                                </li>
+                                <li class="header__menu-list-item">
+                                    <a class="header__menu-list-item-link">
+                                        Гардеробные
+                                    </a>
+                                </li>
+                            </ul>
+                            <ul class="header__menu-list">
+                                <li class="header__menu-list-item header__menu-list-item--title">
+                                    <a class="header__menu-list-item-link">
+                                        Ванные
+                                    </a>
+                                </li>
+                                <li class="header__menu-list-item">
+                                    <a class="header__menu-list-item-link">
+                                        Современные
+                                    </a>
+                                </li>
+                                <li class="header__menu-list-item">
+                                    <a class="header__menu-list-item-link">
+                                        Классические
+                                    </a>
+                                </li>
+                                <li class="header__menu-list-item">
+                                    <a class="header__menu-list-item-link">
+                                        Сантехника
+                                    </a>
+                                </li>
+                                <li class="header__menu-list-item">
+                                    <a class="header__menu-list-item-link">
+                                        Оборудование
+                                    </a>
+                                </li>
+                            </ul>
+                            <ul class="header__menu-list">
+                                <li class="header__menu-list-item header__menu-list-item--title">
+                                    <a class="header__menu-list-item-link">
+                                        Мебель
+                                    </a>
+                                </li>
+                                <li class="header__menu-list-item">
+                                    <a class="header__menu-list-item-link">
+                                        Для кухни
+                                    </a>
+                                </li>
+                                <li class="header__menu-list-item">
+                                    <a class="header__menu-list-item-link">
+                                        Столовая группа
+                                    </a>
+                                </li>
+                                <li class="header__menu-list-item">
+                                    <a class="header__menu-list-item-link">
+                                        Гостиная
+                                    </a>
+                                </li>
+                                <li class="header__menu-list-item">
+                                    <a class="header__menu-list-item-link">
+                                        Спальня
+                                    </a>
+                                </li>
+                                <li class="header__menu-list-item">
+                                    <a class="header__menu-list-item-link">
+                                        Для ванной
+                                    </a>
+                                </li>
+                            </ul>
+                            <ul class="header__menu-list">
+                                <li class="header__menu-list-item header__menu-list-item--title">
+                                    <a class="header__menu-list-item-link">
+                                        Бытовая техника
+                                    </a>
+                                </li>
+                                <li class="header__menu-list-item">
+                                    <a class="header__menu-list-item-link">
+                                        Варочные панели
+                                    </a>
+                                </li>
+                                <li class="header__menu-list-item">
+                                    <a class="header__menu-list-item-link">
+                                        Духовые шкафы
+                                    </a>
+                                </li>
+                                <li class="header__menu-list-item">
+                                    <a class="header__menu-list-item-link">
+                                        Микроволновые печи
+                                    </a>
+                                </li>
+                                <li class="header__menu-list-item">
+                                    <a class="header__menu-list-item-link">
+                                        Посудомоечные машины
+                                    </a>
+                                </li>
+                                <li class="header__menu-list-item">
+                                    <a class="header__menu-list-item-link">
+                                        Холодильники
+                                    </a>
+                                </li>
+                                <li class="header__menu-list-item">
+                                    <a class="header__menu-list-item-link">
+                                        Стиральные машины
+                                    </a>
+                                </li>
+                                <li class="header__menu-list-item">
+                                    <a class="header__menu-list-item-link">
+                                        Кофемашины
+                                    </a>
+                                </li>
+                                <li class="header__menu-list-item">
+                                    <a class="header__menu-list-item-link">
+                                        Компактные приборы
+                                    </a>
+                                </li>
+                            </ul>
+                            <ul class="header__menu-list">
+                                <li class="header__menu-list-item header__menu-list-item--title">
+                                    <a class="header__menu-list-item-link">
+                                        Оформление интерьера
+                                    </a>
+                                </li>
+                                <li class="header__menu-list-item">
+                                    <a class="header__menu-list-item-link">
+                                        Вытяжки
+                                    </a>
+                                </li>
+                                <li class="header__menu-list-item">
+                                    <a class="header__menu-list-item-link">
+                                        Мойки
+                                    </a>
+                                </li>
+                                <li class="header__menu-list-item">
+                                    <a class="header__menu-list-item-link">
+                                        Смесители
+                                    </a>
+                                </li>
+                                <li class="header__menu-list-item">
+                                    <a class="header__menu-list-item-link">
+                                        Посуда
+                                    </a>
+                                </li>
+                                <li class="header__menu-list-item">
+                                    <a class="header__menu-list-item-link">
+                                        Настенные покрытия
+                                    </a>
+                                </li>
+                            </ul>
+                            <ul class="header__menu-list">
+                                <li class="header__menu-list-item header__menu-list-item--title">
+                                    <a class="header__menu-list-item-link">
+                                        B2B
+                                    </a>
+                                </li>
+                                <li class="header__menu-list-item">
+                                    <a class="header__menu-list-item-link">
+                                        Кухни
+                                    </a>
+                                </li>
+                                <li class="header__menu-list-item">
+                                    <a class="header__menu-list-item-link">
+                                        Стойки ресепшн
+                                    </a>
+                                </li>
+                                <li class="header__menu-list-item">
+                                    <a class="header__menu-list-item-link">
+                                        Барные стойки
+                                    </a>
+                                </li>
+                                <li class="header__menu-list-item">
+                                    <a class="header__menu-list-item-link">
+                                        Ванные
+                                    </a>
+                                </li>
+                                <li class="header__menu-list-item">
+                                    <a class="header__menu-list-item-link">
+                                        Туалетные комнаты
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="header__menu-promo">
+                            <div class="header__menu-promo-1">
+                                <div class="header__menu-promo-1-info">
+                                    <h3 class="header__menu-promo-1-info-title">
+                                        Шкаф-купе Mix
+                                    </h3>
+                                    <p class="header__menu-promo-1-info-text">
+                                        Дуэт дизайна и практичности сочетающиеся в одной модели
+                                    </p>
+                                    <p class="header__menu-promo-1-info-price">
+                                        от 79 125₽
+                                    </p>
+                                    <button class="header__menu-promo-1-info-btn" href="#"></button>
+                                </div>
+                            </div>
+                            <div class="header__menu-promo-2">
+                                <div class="header__menu-promo-2">
+                                    <div class="header__menu-promo-2-info">
+                                        <h3 class="header__menu-promo-2-info-title">
+                                            Модель Nicolle
+                                        </h3>
+                                        <p class="header__menu-promo-2-info-text">
+                                            Изысканность классики в сочетании со строгостью линий модерна
+                                        </p>
+                                        <p class="header__menu-promo-2-info-price">
+                                            от 22 400₽
+                                        </p>
+                                        <button class="header__menu-promo-2-info-btn" href="#"></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- 5 ЛОГО -->
+                <div class="header__logo">
+                    <img class="header__logo-img" alt="logo" width="221px" height="53px" src="img/logo.png" />
+                </div>
+                <!-- 6 АССОРТИМЕНТ -->
+                <div class="header__range">
+                    <ul class="header__range-common-list">
+                        <li class="header__range-common-list-item">
+                            <a class="header__range-common-list-item-link header__range-common-list-item-link--active"
+                                href="#">Кухни</a>
+                        </li>
+                        <li class="header__range-common-list-item">
+                            <a class="header__range-common-list-item-link" href="#">Шкафы</a>
+                        </li>
+                        <li class="header__range-common-list-item">
+                            <a class="header__range-common-list-item-link" href="#">Ванные</a>
+                        </li>
+                    </ul>
+                    <ul class="header__range-detail-list">
+                        <li class="header__range-detail-list-item">
+                            <a class="header__range-detail-list-item-link" href="#">
+                                Современные
+                                <span class="header__range-detail-list-item-link-count">43</span>
+                                <p class="header__range-detail-list-item-link-separate">/</p>
+                            </a>
+                        </li>
+                        <li class="header__range-detail-list-item header__range-detail-list-item--classic">
+                            <a class="header__range-detail-list-item-link" href="#">
+                                Классические
+                                <span class="header__range-detail-list-item-link-count">23</span>
+                                <p class="header__range-detail-list-item-link-separate">/</p>
+                            </a>
+                        </li>
+                        <li class="header__range-detail-list-item">
+                            <a class="header__range-detail-list-item-link" href="#">
+                                Неоклассика
+                                <span class="header__range-detail-list-item-link-count">27</span>
+                                <p class="header__range-detail-list-item-link-separate">/</p>
+                            </a>
+                        </li>
+                        <li class="header__range-detail-list-item">
+                            <a class="header__range-detail-list-item-link" href="#">
+                                KarMa by Karim
+                            </a>
+                        </li>
+                        <li class="header__range-detail-list-item">
+                            <a class="header__range-detail-list-item-link" href="#">
+                                Rashid
+                                <span
+                                    class="header__range-detail-list-item-link-count header__range-detail-list-item-link-count--rashid">15</span>
+                                <p class="header__range-detail-list-item-link-separate">/</p>
+                            </a>
+                        </li>
+                        <li class="header__range-detail-list-item">
+                            <a class="header__range-detail-list-item-link" href="#">
+                                Прованс
+                                <span
+                                    class="header__range-detail-list-item-link-count header__range-detail-list-item-link-count--provans">18</span>
+                                <p class="header__range-detail-list-item-link-separate">/</p>
+                            </a>
+                        </li>
+                        <li class="header__range-detail-list-item">
+                            <a class="header__range-detail-list-item-link" href="#">
+                                Лофт
+                                <span
+                                    class="header__range-detail-list-item-link-count header__range-detail-list-item-link-count--loft">14</span>
+                                <p class="header__range-detail-list-item-link-separate">/</p>
+                            </a>
+                        </li>
+                        <li class="header__range-detail-list-item">
+                            <a class="header__range-detail-list-item-link" href="#">
+                                Скандинавский стиль
+                                <span
+                                    class="header__range-detail-list-item-link-count header__range-detail-list-item-link-count--scandinavian">12</span>
+                                <p class="header__range-detail-list-item-link-separate">/</p>
+                            </a>
+                        </li>
+                        <li class="header__range-detail-list-item">
+                            <a class="header__range-detail-list-item-link" href="#">
+                                Хай-тек
+                                <span class="header__range-detail-list-item-link-count">11</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- 7 КНОПКА -->
+                <div class="header__btn">
+                    <button class="header__btn-action">
+                        <a class="header__btn-link">Заказать проект</a>
+                    </button>
+                </div>
+
+            </div>
+        </div>
+    </header>
+
+    <main class=" main">
+        <div class="main__inner">
+
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</head>
+
+<body>
+
+</body>
+
+</html>

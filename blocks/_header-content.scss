@@ -1,0 +1,539 @@
+.header {
+
+    &__content {
+        @include flex;
+        flex-wrap      : wrap;
+        align-items    : flex-start;
+        max-width      : 1350px;
+        margin         : 0 auto;
+        justify-content: flex-start;
+        padding-top    : 32px;
+    }
+
+    &__burger {
+        order       : 0;
+        margin-top  : -1px;
+        margin-left : -1px;
+        margin-right: 38px;
+
+    }
+
+    &__burger-link {}
+
+    &__burger-img {}
+
+    &__tel {
+        order       : 1;
+        margin-top  : -1px;
+        margin-right: 105px;
+
+    }
+
+    &__tel-number {
+        color         : #000000;
+        font-family   : Montserrat;
+        font-size     : 16px;
+        font-weight   : 500;
+        font-style    : normal;
+        letter-spacing: normal;
+        line-height   : 16px;
+        margin-right  : 2px;
+    }
+
+    &__tel-text {
+        opacity       : 0.3;
+        color         : #000000;
+        font-family   : Montserrat;
+        font-size     : 14px;
+        font-weight   : 500;
+        font-style    : normal;
+        letter-spacing: normal;
+        line-height   : 14px;
+    }
+
+    &__list {
+        order: 2;
+        @include flex;
+        border-bottom  : 1px solid #ececec;
+        margin-bottom  : 44px;
+        align-items    : flex-start;
+        justify-content: flex-start;
+        flex-grow      : 1
+    }
+
+    &__list-services {
+        @include flex;
+
+        padding-bottom: 31px;
+    }
+
+    &__list-services-item {
+        margin-right: 26px;
+
+
+        &:nth-child(5n) {
+            margin-right: 0;
+        }
+    }
+
+    &__list-services-item-link {
+        color         : #000000;
+        font-family   : Montserrat;
+        font-size     : 14px;
+        font-weight   : 500;
+        font-style    : normal;
+        letter-spacing: normal;
+        line-height   : 14px;
+    }
+
+    &__list-services-item--arrow {
+        position: relative;
+
+        &::after {
+            position         : absolute;
+            width            : 12px;
+            height           : 20px;
+            content          : "";
+            background       : url("img/arrow-right.svg");
+            background-repeat: no-repeat;
+            top              : 5px;
+            right            : -16px;
+        }
+    }
+
+    &__list-user {
+        @include flex;
+        justify-content: flex-start;
+        margin-left    : auto;
+        margin-top     : -3px;
+    }
+
+    &__list-user-item {}
+
+    &__list-user-item--location {
+
+        & a {
+            margin-top: 3px;
+            display   : inline-block;
+        }
+
+        & img {
+            margin-right: 6px;
+            margin-top  : -4px;
+        }
+    }
+
+    &__list-user-item-link {
+        color         : #000000;
+        font-family   : Montserrat;
+        font-size     : 14px;
+        font-weight   : 500;
+        font-style    : normal;
+        letter-spacing: normal;
+        line-height   : 14px;
+    }
+
+    &__list-user-img {}
+
+    &__list-user-item--search {
+        margin-left: 35px;
+    }
+
+    &__list-user-item--ring {
+        margin-left: 32px;
+    }
+
+    &__list-user-item--login {
+        margin-left: 31px;
+    }
+
+    &__search {
+        display: none;
+        order  : 3;
+    }
+
+    &__search-inner {}
+
+    &__search-input {
+        &::placeholder {
+            color         : #000000;
+            font-family   : Montserrat;
+            font-size     : 20px;
+            font-weight   : 500;
+            font-style    : normal;
+            letter-spacing: normal;
+            line-height   : 20px;
+        }
+    }
+
+    &__search-btn {
+        width           : 136px;
+        height          : 40px;
+        border-radius   : 25px;
+        background-color: #ce3730;
+        color           : #ffffff;
+        font-family     : Montserrat;
+        font-size       : 16px;
+        font-weight     : 500;
+        font-style      : normal;
+        letter-spacing  : normal;
+        line-height     : 22.4px;
+    }
+
+    &__search-result {}
+
+    &__search-popular {
+        opacity       : 0.5;
+        color         : #000000;
+        font-family   : Montserrat;
+        font-size     : 14px;
+        font-weight   : 500;
+        font-style    : normal;
+        letter-spacing: normal;
+        line-height   : 14px;
+    }
+
+    &__search-list {}
+
+    &__search-item {
+        color         : #000000;
+        font-family   : Montserrat;
+        font-size     : 12px;
+        font-weight   : 500;
+        font-style    : normal;
+        letter-spacing: normal;
+        line-height   : 26.4px;
+    }
+
+    &__search-item-bold {
+        font-family   : Montserrat;
+        font-weight   : 700;
+        font-style    : normal;
+        letter-spacing: normal;
+        line-height   : normal;
+    }
+
+    &__search-product-list {}
+
+    &__search-product-list-item {}
+
+    &__search-product-list-item-wrapper {}
+
+    &__search-product-list-item-img {}
+
+    &__search-product-list-item-infos {
+        color         : #000000;
+        font-family   : Montserrat;
+        font-size     : 14px;
+        font-weight   : 500;
+        font-style    : normal;
+        letter-spacing: normal;
+        line-height   : 23.8px;
+    }
+
+    &__search-product-list-item-infos-name {}
+
+    &__search-product-list-item-infos-price {}
+
+    &__search-product-list-item-infos-text {
+        color         : #000000;
+        font-family   : Montserrat;
+        font-size     : 12px;
+        font-weight   : 500;
+        font-style    : normal;
+        letter-spacing: normal;
+        line-height   : 18px;
+    }
+
+    &__menu {
+        display: none;
+        order  : 4;
+    }
+
+    &__menu-wrapper {}
+
+    &__menu-top-list {
+        color         : #000000;
+        font-family   : Montserrat;
+        font-size     : 20px;
+        font-weight   : 600;
+        font-style    : normal;
+        letter-spacing: normal;
+        line-height   : 30px;
+    }
+
+    &__menu-list-item {}
+
+    &__menu-list-item-link {}
+
+    &__menu-lists {
+        color         : #000000;
+        font-family   : Montserrat;
+        font-size     : 14px;
+        font-weight   : 400;
+        font-style    : normal;
+        letter-spacing: normal;
+        line-height   : 23.8px;
+    }
+
+    &__menu-list {}
+
+    &__menu-list-item--title {
+        color         : #000000;
+        font-family   : Montserrat;
+        font-size     : 16px;
+        font-weight   : 600;
+        font-style    : normal;
+        letter-spacing: normal;
+        line-height   : 24px;
+    }
+
+    &__menu-promo {}
+
+    &__menu-promo-1 {
+        background: url("img/burgerpromo1.png");
+        width     : 840px;
+        height    : 425px;
+    }
+
+    &__menu-promo-1-info {}
+
+    &__menu-promo-1-info-title {
+        color         : #ce3730;
+        font-family   : Montserrat;
+        font-size     : 20px;
+        font-weight   : 700;
+        font-style    : normal;
+        letter-spacing: normal;
+        line-height   : 28px;
+    }
+
+    &__menu-promo-1-info-text {
+        color         : #000000;
+        font-family   : Montserrat;
+        font-size     : 14px;
+        font-weight   : 400;
+        font-style    : normal;
+        letter-spacing: normal;
+        line-height   : 19.6px;
+    }
+
+    &__menu-promo-1-info-price {
+        color         : #000000;
+        font-family   : Montserrat;
+        font-size     : 20px;
+        font-weight   : 700;
+        font-style    : normal;
+        letter-spacing: normal;
+        line-height   : 28px;
+    }
+
+    &__menu-promo-1-info-btn {
+        width           : 58px;
+        height          : 58px;
+        background-color: #ce3730;
+        border-radius   : 50%;
+    }
+
+    &__menu-promo-2 {
+        background: url("img/burgerpromo2.png");
+        width     : 840px;
+        height    : 425px;
+    }
+
+    &__menu-promo-2-info {
+        width           : 58px;
+        height          : 58px;
+        background-color: #ce3730;
+    }
+
+    &__menu-promo-2-info-title {
+        color         : #ce3730;
+        font-family   : Montserrat;
+        font-size     : 20px;
+        font-weight   : 700;
+        font-style    : normal;
+        letter-spacing: normal;
+        line-height   : 28px;
+    }
+
+    &__menu-promo-2-info-text {
+        color         : #000000;
+        font-family   : Montserrat;
+        font-size     : 14px;
+        font-weight   : 400;
+        font-style    : normal;
+        letter-spacing: normal;
+        line-height   : 19.6px;
+    }
+
+    &__menu-promo-2-info-price {
+        color         : #000000;
+        font-family   : Montserrat;
+        font-size     : 20px;
+        font-weight   : 700;
+        font-style    : normal;
+        letter-spacing: normal;
+        line-height   : 28px;
+    }
+
+    &__menu-promo-2-info-btn {
+        width           : 58px;
+        height          : 58px;
+        background-color: #ce3730;
+        border-radius   : 50%;
+    }
+
+    &__logo {
+        order       : 5;
+        margin-left : 60px;
+        margin-right: 141px;
+    }
+
+    &__logo-img {
+        width: 224px;
+    }
+
+    &__range {
+        order: 6;
+        @include flex;
+        max-width   : 580px;
+        flex-wrap   : wrap;
+        margin-right: auto;
+        z-index     : 1;
+    }
+
+    &__range-common-list {
+        @include flex;
+        margin-bottom: 61px;
+    }
+
+    &__range-common-list-item {
+        margin-right: 57px;
+
+        &:nth-child(3n) {
+            margin-right: 0;
+        }
+    }
+
+    &__range-common-list-item-link--active {
+        border-bottom : 2px solid #000000;
+        padding-bottom: 3px;
+    }
+
+    &__range-common-list-item-link {
+        color         : #000000;
+        font-family   : Montserrat;
+        font-size     : 36px;
+        font-weight   : 400;
+        font-style    : normal;
+        letter-spacing: normal;
+        line-height   : 36px;
+    }
+
+    &__range-detail-list {
+        @include flex;
+        flex-wrap      : wrap;
+        justify-content: flex-start;
+    }
+
+    &__range-detail-list-item {
+        margin-right: 4px;
+
+        &:hover {
+            color: #ce3730;
+        }
+    }
+
+    &__range-detail-list-item--classic {
+        margin-right: 6px;
+    }
+
+
+
+    &__range-detail-list-item-link {
+        color         : #000000;
+        font-family   : Montserrat;
+        font-size     : 15px;
+        font-weight   : 400;
+        font-style    : normal;
+        letter-spacing: normal;
+        line-height   : 25.5px;
+        display       : flex;
+
+        &:hover {
+            color: inherit
+        }
+
+        &:hover span {
+            color: inherit
+        }
+
+        &:hover p {
+            color: #000000
+        }
+    }
+
+    &__range-detail-list-item-link-count {
+        opacity       : 0.5;
+        color         : #000000;
+        font-family   : Montserrat;
+        font-size     : 12px;
+        font-weight   : 400;
+        font-style    : normal;
+        letter-spacing: normal;
+        line-height   : 18px;
+        margin-top    : -3px;
+        margin-left   : 2px;
+        margin-right  : 3px;
+    }
+
+    &__range-detail-list-item-link-count--rashid {
+        margin-right: 6px;
+        margin-top  : -2px;
+    }
+
+    &__range-detail-list-item-link-count--provans {
+        margin-left: 5px;
+        margin-top : -2px;
+    }
+
+    &__range-detail-list-item-link-count--loft {
+        margin-top  : -2px;
+        margin-left : 3px;
+        margin-right: 5px;
+    }
+
+    &__range-detail-list-item-link-count--scandinavian {
+        margin-left : 4px;
+        margin-top  : -2px;
+        margin-right: 4px;
+    }
+
+
+    &__btn {
+        flex-basis : 100%;
+        order      : 7;
+        margin-left: 80px;
+        margin-top : -49px;
+    }
+
+    &__btn-action {
+        width        : 179px;
+        height       : 39px;
+        border-radius: 33px;
+        border       : 2px solid #ce3730;
+        background   : #fff;
+    }
+
+    &__btn-link {
+        color         : #ce3730;
+        font-family   : Montserrat;
+        font-size     : 14px;
+        font-weight   : 500;
+        font-style    : normal;
+        letter-spacing: normal;
+        line-height   : 14px;
+        text-align    : center;
+    }
+}

@@ -1,0 +1,57 @@
+.header {
+
+    &__inner {}
+
+    &__top {
+        background-color: #272222;
+    }
+
+    &__top-wrapper {
+        max-width     : 1350px;
+        margin        : 0 auto;
+        padding-top   : 9px;
+        padding-bottom: 9px;
+        @include flex;
+        justify-content: flex-end;
+    }
+
+    &__top-text {
+        color         : #ffffff;
+        font-family   : Montserrat;
+        font-size     : 12px;
+        font-weight   : 600;
+        font-style    : normal;
+        letter-spacing: normal;
+        line-height   : 16.8px;
+    }
+
+    &__top-text-ask {
+        margin-right: 50px;
+        position    : relative;
+
+        &::before {
+            content          : "";
+            position         : absolute;
+            background       : url("../img/headerAsk.svg");
+            width            : 18px;
+            height           : 16px;
+            left             : -25px;
+            top              : 2px;
+            background-repeat: no-repeat;
+        }
+    }
+
+    &__top-text-check {
+        position: relative;
+
+        &::before {
+            content          : "";
+            position         : absolute;
+            background       : url("../img/headerCheck.svg");
+            width            : 18px;
+            height           : 18px;
+            left             : -26px;
+            background-repeat: no-repeat;
+        }
+    }
+}
