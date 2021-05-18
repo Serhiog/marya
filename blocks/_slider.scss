@@ -1,0 +1,154 @@
+.slick-slider {}
+
+/* Слайдер запущен */
+.slick-slider.slick-initialized {}
+
+/* Слайдер с точками */
+.slick-slider.slick-dotted {}
+
+/* Ограничивающая оболочка */
+.slick-list {
+    overflow: hidden;
+}
+
+/* Лента слайдов */
+.slick-track {
+    display: flex;
+}
+
+/* Слайд */
+.slick-slide {}
+
+/* Слайд активный (показывается) */
+.slick-slide.slick-active {}
+
+/* Слайд основной */
+.slick-slide.slick-current {}
+
+/* Слайд по центру */
+.slick-slide.slick-center {}
+
+/* Клонированный слайд */
+.slick-slide.slick-cloned {}
+
+/* Стрелка */
+.slick-arrow {}
+
+/* Стрелка влево */
+.slick-arrow.slick-prev {}
+
+/* Стрелка вправо */
+.slick-arrow.slick-next {}
+
+/* Стрелка не активная */
+.slick-arrow.slick-disabled {}
+
+/* Точки (булиты) */
+.slick-dots {
+    display        : flex;
+    align-items    : center;
+    justify-content: center;
+    position       : absolute;
+    bottom         : 6%;
+    left           : 13%;
+}
+
+.slick-dots li {
+    list-style: none;
+}
+
+/* Активная точка */
+.slick-dots li.slick-active button {
+    background: transparent;
+    border    : 1px solid #fff;
+}
+
+/* Элемент точки */
+.slick-dots li button {
+    font-size       : 0;
+    width           : 15px;
+    height          : 15px;
+    background-color: #ffffff;
+    opacity         : 0.4;
+    border-radius   : 50%;
+    margin-right    : 23px;
+}
+
+.slider {
+    position: relative;
+}
+
+.slider .slick-arrow {
+    position : absolute;
+    top      : 50%;
+    z-index  : 10;
+    font-size: 0;
+}
+
+.slider .slick-arrow.slick-prev {
+    left            : 0;
+    bottom          : 0;
+    width           : 15px;
+    height          : 15px;
+    background-color: #ffffff;
+    opacity         : 0.4;
+    border-radius   : 50%;
+    left            : 161px;
+    top             : 763px;
+}
+
+.slider .slick-arrow.slick-next {
+    right           : 0;
+    width           : 15px;
+    height          : 15px;
+    background-color: #ffffff;
+    opacity         : 0.4;
+    border-radius   : 50%;
+    top             : 763px;
+    left            : 202px;
+}
+
+.slider {
+    display        : flex;
+    align-items    : flex-end;
+    justify-content: flex-start;
+    margin         : 0 auto;
+    max-width      : 1670px;
+    margin-bottom  : 140px;
+}
+
+.slider__right {
+    max-width: 580px;
+    order    : 1;
+}
+
+.slider__left {
+    max-width   : 1021px;
+    margin-right: 29px;
+    order       : 0;
+
+    & ul {
+        bottom: 6%;
+        left  : 10%;
+    }
+}
+
+.main__slider-promo-info--red {
+    padding: 34px 10px 21px 31px;
+}
+
+.main__slider-promo-bosh--red {
+    margin-bottom: 48px;
+}
+
+.main__slider-promo-info-text--red {
+    margin-right: 26px;
+}
+
+.main__slider-promo-info-wrapper--red {
+    margin-top: -21px;
+}
+
+.slider__hide {
+    z-index: -100;
+}
