@@ -2140,7 +2140,6 @@ template {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
-  z-index: -1;
 }
 
 .main__section-row-1-photo-1 {
@@ -2215,7 +2214,6 @@ template {
       -ms-flex-align: end;
           align-items: flex-end;
   margin-bottom: 95px;
-  z-index: -1;
 }
 
 .main__section-row-2-photo-1 {
@@ -2519,6 +2517,10 @@ template {
 }
 
 .slider__hide {
+  z-index: -100;
+}
+
+.header__toggle-index {
   z-index: -100;
 }
 /*# sourceMappingURL=style.css.map */

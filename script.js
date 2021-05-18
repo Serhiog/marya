@@ -34,6 +34,9 @@ const mainContent = document.querySelector(".main__dark-wrapper");
 
 const slider = document.querySelector(".slider");
 
+const row1 = document.querySelector(".main__section-row-1");
+const row2 = document.querySelector(".main__section-row-2");
+
 searchBtn.addEventListener("click", () => {
   if (header.classList.contains("header__burger-active")) {
   } else {
@@ -41,16 +44,16 @@ searchBtn.addEventListener("click", () => {
   }
 
   burgerMenu.classList.remove("header__menu--active");
-
   header.classList.remove("header__sticked");
   header.classList.remove("header__burger-active");
-
   searchPanel.classList.toggle("header__search--hidden");
   searchBtn.classList.toggle("header__list-user-item-link--search--active");
   list.classList.toggle("header__list--active");
   main.classList.toggle("main__search");
   mainContent.classList.toggle("main__search");
   slider.classList.toggle("slider__hide");
+  row1.classList.toggle("header__toggle-index");
+  row2.classList.toggle("header__toggle-index");
 });
 
 searchInput.addEventListener("click", () => {
