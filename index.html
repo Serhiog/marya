@@ -11,26 +11,47 @@
 
 <body>
 
+
+
+
+    <div class="header__top">
+        <div class="header__top-wrapper">
+            <p class="header__top-text header__top-text-ask">Задать вопрос</p>
+            <p class="header__top-text header__top-text-check">Проверить состояние заказа</p>
+        </div>
+    </div>
+
     <header class="header">
         <div class="header__inner">
-            <div class="header__top">
-                <div class="header__top-wrapper">
-                    <p class="header__top-text header__top-text-ask">Задать вопрос</p>
-                    <p class="header__top-text header__top-text-check">Проверить состояние заказа</p>
-                </div>
-            </div>
             <div class="header__content">
                 <!-- 0 БУРГЕР -->
                 <div class="header__burger">
                     <a class="header__burger-link" href="#">
-                        <img class="header__burger-img" alt="burger" src="img/burgerBtn.svg" width="23px"
-                            height="16px"></img>
+
                     </a>
+                </div>
+                <!-- 0 ЛОГО ТОП -->
+                <div class="header__logo">
+                    <img class="header__logo-img" alt="logo" width="177px" height="44px" src="img/logo.png" />
                 </div>
                 <!-- 1 ТЕЛЕФОН -->
                 <div class="header__tel">
                     <a href="tel:88001003131" class="header__tel-number">8 800 100 31 31</a> <span
                         class="header__tel-text"> – по РФ бесплатно</span>
+                </div>
+                <!-- 1 MINI LIST -->
+                <div class="header__mini-list">
+                    <ul class="header__mini-list-items">
+                        <li class="header__mini-list-item">Кухни</li>
+                        <li class="header__mini-list-item">Шкафы</li>
+                        <li class="header__mini-list-item">Ванные</li>
+                    </ul>
+                </div>
+                <!-- 1 BTN -->
+                <div class="header__btn">
+                    <button class="header__btn-action">
+                        <a class="header__btn-link">Заказать проект</a>
+                    </button>
                 </div>
                 <!-- 2 СПИСОК -->
                 <div class="header__list">
@@ -53,10 +74,10 @@
                     </ul>
                     <ul class="header__list-user">
                         <li class="header__list-user-item header__list-user-item--location">
-                            <a class="header__list-user-item-link" href="#">
+                            <a class="header__list-user-item-link header__list-user-item-link--location" href="#">
                                 <img class="header__list-user-img" src="img/locationHeader.svg" alt="location"
                                     width="17px" height="21px" />
-                                Москва
+                                <span class="header__list-user-city">Москва</span>
                             </a>
                         </li>
                         <li class="header__list-user-item header__list-user-item--search">
@@ -83,7 +104,7 @@
                     <div class="header__search-block">
                         <div class="header__search-inner">
                             <div class="header__search-wrapper">
-                                <input class="header__search-input" type="text" placeholder="Кухонные шкафы">
+                                <input class="header__search-input" type="text" placeholder="Введите запрос">
                                 <button class="header__search-btn" href="#">Найти</button>
                             </div>
                         </div>
@@ -177,18 +198,18 @@
                 <div class="header__menu">
                     <div class="header__menu-wrapper">
                         <ul class="header__menu-top-list">
-                            <li class="header__menu-list-item">
+                            <li class="header__menu-list-item-main">
                                 <a class="header__menu-list-item-link">О компании</a>
                             </li>
-                            <li class="header__menu-list-item">
+                            <li class="header__menu-list-item-main">
                                 <a class="header__menu-list-item-link">Услуги</a>
                             </li>
-                            <li class="header__menu-list-item">
+                            <li class="header__menu-list-item-main">
                                 <a class="header__menu-list-item-link">Продукция</a>
                             </li>
                         </ul>
                         <div class="header__menu-lists">
-                            <ul class="header__menu-list">
+                            <ul class="header__menu-list header__menu-list-1">
                                 <li class="header__menu-list-item header__menu-list-item--title">
                                     <a class="header__menu-list-item-link">
                                         Кухни
@@ -235,7 +256,7 @@
                                     </a>
                                 </li>
                             </ul>
-                            <ul class="header__menu-list">
+                            <ul class="header__menu-list header__menu-list-2">
                                 <li class="header__menu-list-item header__menu-list-item--title">
                                     <a class="header__menu-list-item-link">
                                         Шкафы
@@ -257,7 +278,7 @@
                                     </a>
                                 </li>
                             </ul>
-                            <ul class="header__menu-list">
+                            <ul class="header__menu-list header__menu-list-3">
                                 <li class="header__menu-list-item header__menu-list-item--title">
                                     <a class="header__menu-list-item-link">
                                         Ванные
@@ -284,7 +305,7 @@
                                     </a>
                                 </li>
                             </ul>
-                            <ul class="header__menu-list">
+                            <ul class="header__menu-list header__menu-list-4">
                                 <li class="header__menu-list-item header__menu-list-item--title">
                                     <a class="header__menu-list-item-link">
                                         Мебель
@@ -316,7 +337,7 @@
                                     </a>
                                 </li>
                             </ul>
-                            <ul class="header__menu-list">
+                            <ul class="header__menu-list header__menu-list-5">
                                 <li class="header__menu-list-item header__menu-list-item--title">
                                     <a class="header__menu-list-item-link">
                                         Бытовая техника
@@ -363,10 +384,10 @@
                                     </a>
                                 </li>
                             </ul>
-                            <ul class="header__menu-list">
+                            <ul class="header__menu-list header__menu-list-6">
                                 <li class="header__menu-list-item header__menu-list-item--title">
                                     <a class="header__menu-list-item-link">
-                                        Оформление интерьера
+                                        Оформление<br /> интерьера
                                     </a>
                                 </li>
                                 <li class="header__menu-list-item">
@@ -395,7 +416,7 @@
                                     </a>
                                 </li>
                             </ul>
-                            <ul class="header__menu-list">
+                            <ul class="header__menu-list header__menu-list-7">
                                 <li class="header__menu-list-item header__menu-list-item--title">
                                     <a class="header__menu-list-item-link">
                                         B2B
@@ -462,107 +483,199 @@
                         </div>
                     </div>
                 </div>
-                <!-- 5 ЛОГО -->
-                <div class="header__logo">
-                    <img class="header__logo-img" alt="logo" width="221px" height="53px" src="img/logo.png" />
+            </div>
+        </div>
+    </header>
+
+    <main class="main">
+        <div class="main__inner">
+            <div class="main__content">
+                <!-- 5 Logo -->
+                <div class="main__logo">
+                    <img class="main__logo-img" alt="logo" width="221px" height="53px" src="img/logo.png" />
                 </div>
                 <!-- 6 АССОРТИМЕНТ -->
-                <div class="header__range">
-                    <ul class="header__range-common-list">
-                        <li class="header__range-common-list-item">
-                            <a class="header__range-common-list-item-link header__range-common-list-item-link--active"
+                <div class="main__range">
+                    <ul class="main__range-common-list">
+                        <li class="main__range-common-list-item">
+                            <a class="main__range-common-list-item-link main__range-common-list-item-link--active"
                                 href="#">Кухни</a>
                         </li>
-                        <li class="header__range-common-list-item">
-                            <a class="header__range-common-list-item-link" href="#">Шкафы</a>
+                        <li class="main__range-common-list-item">
+                            <a class="main__range-common-list-item-link" href="#">Шкафы</a>
                         </li>
-                        <li class="header__range-common-list-item">
-                            <a class="header__range-common-list-item-link" href="#">Ванные</a>
+                        <li class="main__range-common-list-item">
+                            <a class="main__range-common-list-item-link" href="#">Ванные</a>
                         </li>
                     </ul>
-                    <ul class="header__range-detail-list">
-                        <li class="header__range-detail-list-item">
-                            <a class="header__range-detail-list-item-link" href="#">
+                    <ul class="main__range-detail-list">
+                        <li class="main__range-detail-list-item">
+                            <a class="main__range-detail-list-item-link" href="#">
                                 Современные
-                                <span class="header__range-detail-list-item-link-count">43</span>
-                                <p class="header__range-detail-list-item-link-separate">/</p>
+                                <span class="main__range-detail-list-item-link-count">43</span>
+                                <p class="main__range-detail-list-item-link-separate">/</p>
                             </a>
                         </li>
-                        <li class="header__range-detail-list-item header__range-detail-list-item--classic">
-                            <a class="header__range-detail-list-item-link" href="#">
+                        <li class="main__range-detail-list-item main__range-detail-list-item--classic">
+                            <a class="main__range-detail-list-item-link" href="#">
                                 Классические
-                                <span class="header__range-detail-list-item-link-count">23</span>
-                                <p class="header__range-detail-list-item-link-separate">/</p>
+                                <span class="main__range-detail-list-item-link-count">23</span>
+                                <p class="main__range-detail-list-item-link-separate">/</p>
                             </a>
                         </li>
-                        <li class="header__range-detail-list-item">
-                            <a class="header__range-detail-list-item-link" href="#">
+                        <li class="main__range-detail-list-item">
+                            <a class="main__range-detail-list-item-link" href="#">
                                 Неоклассика
-                                <span class="header__range-detail-list-item-link-count">27</span>
-                                <p class="header__range-detail-list-item-link-separate">/</p>
+                                <span class="main__range-detail-list-item-link-count">27</span>
+                                <p class="main__range-detail-list-item-link-separate">/</p>
                             </a>
                         </li>
-                        <li class="header__range-detail-list-item">
-                            <a class="header__range-detail-list-item-link" href="#">
+                        <li class="main__range-detail-list-item">
+                            <a class="main__range-detail-list-item-link" href="#">
                                 KarMa by Karim
                             </a>
                         </li>
-                        <li class="header__range-detail-list-item">
-                            <a class="header__range-detail-list-item-link" href="#">
+                        <li class="main__range-detail-list-item">
+                            <a class="main__range-detail-list-item-link" href="#">
                                 Rashid
                                 <span
-                                    class="header__range-detail-list-item-link-count header__range-detail-list-item-link-count--rashid">15</span>
-                                <p class="header__range-detail-list-item-link-separate">/</p>
+                                    class="main__range-detail-list-item-link-count main__range-detail-list-item-link-count--rashid">15</span>
+                                <p class="main__range-detail-list-item-link-separate">/</p>
                             </a>
                         </li>
-                        <li class="header__range-detail-list-item">
-                            <a class="header__range-detail-list-item-link" href="#">
+                        <li class="main__range-detail-list-item">
+                            <a class="main__range-detail-list-item-link" href="#">
                                 Прованс
                                 <span
-                                    class="header__range-detail-list-item-link-count header__range-detail-list-item-link-count--provans">18</span>
-                                <p class="header__range-detail-list-item-link-separate">/</p>
+                                    class="main__range-detail-list-item-link-count main__range-detail-list-item-link-count--provans">18</span>
+                                <p class="main__range-detail-list-item-link-separate">/</p>
                             </a>
                         </li>
-                        <li class="header__range-detail-list-item">
-                            <a class="header__range-detail-list-item-link" href="#">
+                        <li class="main__range-detail-list-item">
+                            <a class="main__range-detail-list-item-link" href="#">
                                 Лофт
                                 <span
-                                    class="header__range-detail-list-item-link-count header__range-detail-list-item-link-count--loft">14</span>
-                                <p class="header__range-detail-list-item-link-separate">/</p>
+                                    class="main__range-detail-list-item-link-count main__range-detail-list-item-link-count--loft">14</span>
+                                <p class="main__range-detail-list-item-link-separate">/</p>
                             </a>
                         </li>
-                        <li class="header__range-detail-list-item">
-                            <a class="header__range-detail-list-item-link" href="#">
+                        <li class="main__range-detail-list-item">
+                            <a class="main__range-detail-list-item-link" href="#">
                                 Скандинавский стиль
                                 <span
-                                    class="header__range-detail-list-item-link-count header__range-detail-list-item-link-count--scandinavian">12</span>
-                                <p class="header__range-detail-list-item-link-separate">/</p>
+                                    class="main__range-detail-list-item-link-count main__range-detail-list-item-link-count--scandinavian">12</span>
+                                <p class="main__range-detail-list-item-link-separate">/</p>
                             </a>
                         </li>
-                        <li class="header__range-detail-list-item">
-                            <a class="header__range-detail-list-item-link" href="#">
+                        <li class="main__range-detail-list-item">
+                            <a class="main__range-detail-list-item-link" href="#">
                                 Хай-тек
-                                <span class="header__range-detail-list-item-link-count">11</span>
+                                <span class="main__range-detail-list-item-link-count">11</span>
                             </a>
                         </li>
                     </ul>
                 </div>
                 <!-- 7 КНОПКА -->
-                <div class="header__btn">
-                    <button class="header__btn-action">
-                        <a class="header__btn-link">Заказать проект</a>
+                <div class="main__btn">
+                    <button class="main__btn-action">
+                        <a class="main__btn-link">Заказать проект</a>
                     </button>
+                </div>
+            </div>
+        </div>
+    </main>
+    <div class="main__dark-wrapper">
+        <div class="slider">
+            <div class="slider__left">
+                <div class="main__slider-item">
+                    <img src="img/slider1.png" alt="slider1" width="1338px" height="873px">
+                </div>
+                <div class="main__slider-item">
+                    <img src="img/slider2.png" alt="slider2" width="1338px" height="873px">
+                </div>
+                <div class="main__slider-item">
+                    <img src="img/slider3.png" alt="slider3" width="1338px" height="873px">
+                </div>
+            </div>
+            <div class="slider__right">
+                <div class="main__slider-item">
+                    <img src="img/slider1.png" alt="slider1" width="1338px" height="640px">
+                </div>
+                <div class="main__slider-item">
+                    <img src="img/slider2.png" alt="slider2" width="1338px" height="640px">
+                </div>
+                <div class="main__slider-item">
+                    <img src="img/jazz@1.5x.png" alt="slider3" width="1338px" height="640px">
+                </div>
+            </div>
+            <div class="main__slider-promo-info">
+                <div class="main__slider-promo-bosh"></div>
+                <p class="main__slider-promo-info-text">
+                    Посудомоечная машина в подарок
+                </p>
+                <div class="main__slider-promo-info-wrapper">
+                    <button class="main__slider-promo-info-btn" href="#"></button>
                 </div>
 
             </div>
-        </div>
-    </header>
+            <div class="main__slider-right">
+                <div class="main__slider-promo-info main__slider-promo-info--red">
+                    <p class="main__slider-promo-bosh main__slider-promo-bosh--red">Портфолио</p>
+                    <p class="main__slider-promo-info-text main__slider-promo-info-text--red">
+                        Выбери свой проект и дизайнера!
+                    </p>
+                    <div class="main__slider-promo-info-wrapper main__slider-promo-info-wrapper--red">
+                        <button class="main__slider-promo-info-btn main__slider-promo-info-btn--red" href="#"></button>
+                    </div>
 
-    <main class=" main">
-        <div class="main__inner">
-
+                </div>
+            </div>
         </div>
-    </main>
+        <section class="main__section">
+            <h1 class="main__section-title">
+                Создайте интерьер в едином стиле вместе с "Марией"
+            </h1>
+            <p class="main__section-about">
+                Мебельная фабрика "Мария" — меблировка "под ключ" в едином стиле по индивиальному проекту. Кухня,
+                гостиная, ванная — в коллекциях новинок 2021 года!
+            </p>
+            <div class="main__section-row-1">
+                <div class="main__section-row-1-photo-1">
+                    <img class="main__section-row-1-img-1" src="img/jazz@1.5x.png" alt="jazz" width="594px"
+                        height="593px" />
+                    <p class="main__section-row-1-name">Кухня Jazz</p>
+                    <p class="main__section-row-1-about">Кухня + техника + столовая группа</p>
+                </div>
+                <div class="main__section-row-1-photo-2">
+                    <img class="main__section-row-1-img-2" src="img/white.png" alt="white" width="664px"
+                        height="475px" />
+                    <p class="main__section-row-1-name">Белая кухня WHITE</p>
+                    <p class="main__section-row-1-about">Кухня + техника + столовая группа</p>
+                </div>
+            </div>
+            <div class="main__section-row-2">
+                <div class="main__section-row-2-photo-1">
+                    <img class="main__section-row-1-img-1" src="img/jazz2.png" alt="jazz" width="593px"
+                        height="542px" />
+                    <p class="main__section-row-2-name">Кухня Jazz</p>
+                    <p class="main__section-row-2-about">Кухня + техника + столовая группа</p>
+                </div>
+                <div class="main__section-row-2-photo-2">
+                    <img class="main__section-row-2-img-2" src="img/white2.png" alt="white" width="664px"
+                        height="608px" />
+                    <p class="main__section-row-2-name">Белая кухня WHITE</p>
+                    <p class="main__section-row-2-about">Кухня + техника + столовая группа</p>
+                </div>
+            </div>
+            <div class="main__btn main__btn--section main__btn--bottom">
+                <button class="main__btn-action main__btn-section--section ">
+                    <a class="main__btn-link main__section--section-link">Заказать проект</a>
+                </button>
+            </div>
+        </section>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="slick.min.js"></script>
     <script src="script.js"></script>
 </body>
 

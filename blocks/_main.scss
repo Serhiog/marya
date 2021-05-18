@@ -1,0 +1,580 @@
+.main {
+    padding-bottom: 66px;
+
+    &__slider {
+        padding-bottom: 119px;
+        max-width     : 1400px;
+        margin        : 0 auto;
+
+    }
+
+    &__slider-inner {
+        // @include flex;
+        // justify-content: flex-start;
+    }
+
+    &__slider-left {
+        max-width: 1060px;
+    }
+
+    &__slider-promo-info {
+
+        order   : 2;
+        position: absolute;
+        bottom  : 262px;
+        left    : 658px;
+        order   : 2;
+
+    }
+
+    &__slider-promo-info-text {
+        flex-basis: 50%;
+    }
+
+    &__slider-promo-info-btn {}
+
+    &__slider-right {
+        position: absolute;
+        top     : 0;
+        z-index : 1;
+        top     : 253px;
+        z-index : 1;
+        left    : 565px;
+    }
+
+    &__slider-promo-bosh {
+        width            : 180px;
+        height           : 42px;
+        background-image : url("img/bosh.png");
+        background-repeat: no-repeat;
+        flex-basis       : 100%;
+    }
+
+
+
+    &__slider-promo-info {
+        background-color: #fff;
+        right           : 19px;
+        bottom          : 26px;
+        width           : 370px;
+        height          : 204px;
+        padding         : 5px 25px 4px 35px;
+        @include flex;
+        justify-content: flex-start;
+        flex-wrap      : wrap;
+        right          : 19px;
+        bottom         : 51px;
+        width          : 475px;
+        left           : 485px;
+        height         : 246px;
+    }
+
+    &__slider-promo-info-title {
+        color         : #ce3730;
+        font-family   : Montserrat;
+        font-size     : 20px;
+        font-weight   : 700;
+        font-style    : normal;
+        letter-spacing: normal;
+        line-height   : 28px;
+        flex-basis    : 100%;
+        width         : 304px;
+        height        : 64px;
+        color         : #000000;
+        font-family   : Montserrat;
+        font-size     : 24px;
+        font-weight   : 400;
+        font-style    : normal;
+        letter-spacing: normal;
+        line-height   : 33.6px;
+    }
+
+    &__slider-promo-info-text {
+        color         : #000000;
+        font-family   : Montserrat;
+        font-size     : 14px;
+        font-weight   : 400;
+        font-style    : normal;
+        letter-spacing: normal;
+        line-height   : 19.6px;
+        /* Style for "Посудомоеч" */
+        width         : 304px;
+        height        : 64px;
+        color         : #000000;
+        font-family   : Montserrat;
+        font-size     : 24px;
+        font-weight   : 400;
+        font-style    : normal;
+        letter-spacing: normal;
+        line-height   : 33.6px;
+        text-align    : left;
+        flex-basis    : 70%;
+        margin-right  : 57px;
+
+    }
+
+    &__slider-promo-info-price {
+        color         : #000000;
+        font-family   : Montserrat;
+        font-size     : 20px;
+        font-weight   : 700;
+        font-style    : normal;
+        letter-spacing: normal;
+        line-height   : 28px;
+    }
+
+    &__slider-promo-info-btn {
+        width           : 58px;
+        height          : 58px;
+        background-color: #ce3730;
+        border-radius   : 50%;
+        margin-left     : auto;
+        position        : relative;
+
+
+        &::before {
+            content          : "";
+            position         : absolute;
+            background-image : url("img/arrow-right.svg");
+            background-repeat: no-repeat;
+            width            : 22px;
+            height           : 22px;
+            top              : 19px;
+            left             : 25px;
+
+        }
+
+        &__slider-promo-info-wrapper {
+            flex-basis: 50%;
+        }
+    }
+
+    &__search {
+        padding-top     : 120px;
+        background-color: rgba(0, 0, 0, 0.4);
+
+        & .main__logo {
+            z-index: -1;
+        }
+
+        & .main__btn {
+            z-index: -1;
+        }
+    }
+
+    &__content {
+        @include flex;
+        flex-wrap      : wrap;
+        align-items    : flex-start;
+        max-width      : 1350px;
+        margin         : 0 auto;
+        justify-content: flex-start;
+    }
+
+
+    &__logo {
+        order       : 5;
+        margin-left : 62px;
+        margin-right: 139px;
+    }
+
+    &__logo-img {
+        width: 224px;
+    }
+
+    &__range {
+        order: 6;
+        @include flex;
+        max-width   : 580px;
+        flex-wrap   : wrap;
+        margin-right: auto;
+    }
+
+    &__range-common-list {
+        @include flex;
+        margin-bottom: 61px;
+    }
+
+    &__range-common-list-item {
+        margin-right: 57px;
+
+        &:nth-child(3n) {
+            margin-right: 0;
+        }
+    }
+
+    &__range-common-list-item-link--active {
+        border-bottom : 2px solid #000000;
+        padding-bottom: 3px;
+    }
+
+    &__range-common-list-item-link {
+        color         : #000000;
+        font-family   : Montserrat;
+        font-size     : 36px;
+        font-weight   : 400;
+        font-style    : normal;
+        letter-spacing: normal;
+        line-height   : 36px;
+    }
+
+    &__range-detail-list {
+        @include flex;
+        flex-wrap      : wrap;
+        justify-content: flex-start;
+    }
+
+    &__range-detail-list-item {
+        margin-right: 4px;
+
+        &:hover {
+            color: #ce3730;
+        }
+    }
+
+    &__range-detail-list-item--classic {
+        margin-right: 6px;
+    }
+
+
+
+    &__range-detail-list-item-link {
+        color         : #000000;
+        font-family   : Montserrat;
+        font-size     : 15px;
+        font-weight   : 400;
+        font-style    : normal;
+        letter-spacing: normal;
+        line-height   : 25.5px;
+        display       : flex;
+
+        &:hover {
+            color: inherit
+        }
+
+        &:hover span {
+            color: inherit
+        }
+
+        &:hover p {
+            color: #000000
+        }
+    }
+
+    &__range-detail-list-item-link-count {
+        opacity       : 0.5;
+        color         : #000000;
+        font-family   : Montserrat;
+        font-size     : 12px;
+        font-weight   : 400;
+        font-style    : normal;
+        letter-spacing: normal;
+        line-height   : 18px;
+        margin-top    : -3px;
+        margin-left   : 2px;
+        margin-right  : 3px;
+        z-index       : -1;
+    }
+
+    &__range-detail-list-item-link-count--rashid {
+        margin-right: 6px;
+        margin-top  : -2px;
+    }
+
+    &__range-detail-list-item-link-count--provans {
+        margin-left: 5px;
+        margin-top : -2px;
+    }
+
+    &__range-detail-list-item-link-count--loft {
+        margin-top  : -2px;
+        margin-left : 3px;
+        margin-right: 5px;
+    }
+
+    &__range-detail-list-item-link-count--scandinavian {
+        margin-left : 4px;
+        margin-top  : -2px;
+        margin-right: 4px;
+    }
+
+    &__btn {
+        flex-basis : 100%;
+        order      : 7;
+        margin-left: 80px;
+        margin-top : -49px;
+    }
+
+    &__btn-action {
+        width        : 179px;
+        height       : 39px;
+        border-radius: 33px;
+        border       : 2px solid #ce3730;
+        background   : #fff;
+    }
+
+    &__btn-link {
+        color         : #ce3730;
+        font-family   : Montserrat;
+        font-size     : 14px;
+        font-weight   : 500;
+        font-style    : normal;
+        letter-spacing: normal;
+        line-height   : 14px;
+        text-align    : center;
+    }
+
+}
+
+
+.main {
+
+    &__section {
+        @include flex;
+        justify-content: flex-start;
+        flex-wrap      : wrap;
+        border-top     : 1px solid #ce3730;
+        margin         : 0 auto;
+        max-width      : 1290px;
+
+    }
+
+    &__section-row-1 {
+        @include flex;
+        justify-content: flex-start;
+        align-items    : flex-start;
+        z-index        : -1;
+    }
+
+    &__section-row-1-photo-1 {
+        border-bottom : 1px solid #000000;
+        padding-bottom: 45px;
+        margin-right  : 34px;
+    }
+
+    &__section-row-1-img-1 {
+        margin-bottom: 20px;
+        z-index      : -10;
+
+        &:hover {
+            padding: 5px
+        }
+    }
+
+    &__section-row-1-name {
+        color      : #000000;
+        font-family: Montserrat;
+        font-size  : 20px;
+        font-weight: 600;
+        line-height: 28px;
+
+        &:hover {
+            color: #d34a44;
+        }
+    }
+
+    &__section-row-1-about {
+        color      : #000000;
+        font-family: Montserrat;
+        font-size  : 14px;
+        font-weight: 400;
+        line-height: 21px;
+    }
+
+    &__section-row-1-photo-2 {
+        border-bottom : 1px solid #ce3730;
+        padding-bottom: 45px;
+    }
+
+    &__section-row-1-img-2 {
+        margin-bottom: 20px;
+        z-index      : -10;
+
+        &:hover {
+            padding: 5px
+        }
+    }
+
+
+
+
+    &__section-row-2 {
+        @include flex;
+        justify-content: flex-start;
+        align-items    : flex-end;
+        margin-bottom  : 95px;
+        z-index        : -1;
+    }
+
+    &__section-row-2-photo-1 {
+        border-bottom : 1px solid #000000;
+        padding-bottom: 45px;
+        margin-right  : 34px;
+        margin-bottom : -44px;
+    }
+
+    &__section-row-1-img-1 {
+        margin-bottom: 20px;
+        z-index      : -10;
+
+        &:hover {
+            padding: 5px
+        }
+    }
+
+    &__section-row-2-name {
+        color      : #000000;
+        font-family: Montserrat;
+        font-size  : 20px;
+        font-weight: 600;
+        line-height: 28px;
+
+        &:hover {
+            color: #d34a44;
+        }
+    }
+
+    &__section-row-2-about {
+        color      : #000000;
+        font-family: Montserrat;
+        font-size  : 14px;
+        font-weight: 400;
+        line-height: 21px;
+    }
+
+    &__section-row-2-photo-2 {
+        border-bottom : 1px solid #000000;
+        padding-bottom: 45px;
+        margin-top    : -71px;
+    }
+
+
+
+    &__section-row-2-img-2 {
+        margin-bottom: 20px;
+        z-index      : -10;
+
+        &:hover {
+            padding: 5px
+        }
+    }
+
+
+}
+
+.main {
+
+    &__section-title {
+        flex-basis    : 100%;
+        color         : #000000;
+        font-family   : Montserrat;
+        font-size     : 28px;
+        font-weight   : 600;
+        font-style    : normal;
+        letter-spacing: normal;
+        line-height   : 39.2px;
+    }
+
+    &__section-about {
+        flex-basis    : 100%;
+        color         : #000000;
+        font-family   : Montserrat;
+        font-size     : 16px;
+        font-weight   : 400;
+        font-style    : normal;
+        letter-spacing: normal;
+        line-height   : 24px;
+        margin-bottom : 71px;
+    }
+
+    .main {
+
+        &__btn--section {
+            @include m0p0;
+            margin-left : auto;
+            margin-right: auto;
+            flex-basis  : auto;
+            flex-basis  : 100%;
+            text-align  : center;
+        }
+
+        &__btn--section {}
+
+        &__btn-action {}
+
+        &__btn-section--section {}
+
+        &__btn-link {}
+
+        &__section--section-link {}
+    }
+
+    &__slider-promo-bosh--red {
+        background-image: none;
+        color           : #ffffff;
+        font-family     : Montserrat;
+        font-size       : 26px;
+        font-weight     : 700;
+        font-style      : normal;
+        letter-spacing  : normal;
+    }
+
+    &__slider-promo-info--red {
+        background-color: #ce3730;
+        width           : 385px;
+        height          : 203px;
+    }
+
+    &__slider-promo-info-text--red {
+        color         : #ffffff;
+        font-family   : Montserrat;
+        font-size     : 14px;
+        font-weight   : 400;
+        font-style    : normal;
+        letter-spacing: normal;
+        line-height   : 19.6px;
+    }
+
+    &__slider-promo-info-btn--red {
+        background-color: #ffffff;
+        position        : relative;
+
+        &::before {
+            content          : "";
+            position         : absolute;
+            background-image : url("img/vector.svg");
+            background-repeat: no-repeat;
+            width            : 22px;
+            height           : 22px;
+            top              : 19px;
+            left             : 25px;
+
+        }
+    }
+
+    &__slider-left {
+        z-index: -1;
+    }
+
+    &__slider-right {
+        z-index: -1;
+    }
+
+}
+
+.main__slider-right {
+    position: absolute;
+    top     : 232px;
+    z-index : 1;
+    left    : 662px;
+    top     : 253px;
+    z-index : 1;
+    left    : 565px;
+}
+
+.main__btn--bottom {
+    text-align    : center;
+    margin-left   : 0;
+    margin-top    : 30px;
+    padding-bottom: 30px;
+}
