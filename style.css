@@ -1306,7 +1306,7 @@ template {
 }
 
 .header__menu-promo-2 {
-  background: url("img/burgePhoto2.png");
+  background: url("img/burgerPhoto2.png");
   width: 840px;
   height: 425px;
   width: 50%;
@@ -2520,7 +2520,7 @@ template {
   z-index: -100;
 }
 
-.header__toggle-index {
+.main__toggle-index {
   z-index: -100;
 }
 /*# sourceMappingURL=style.css.map */
